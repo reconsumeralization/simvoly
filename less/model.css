@@ -1,0 +1,152 @@
+@charset "utf-8";
+nav {
+  height: 97px;
+  position: fixed;
+  background-color: black;
+  z-index: 999;
+}
+nav .container-fluid {
+  position: fixed;
+  width: 90%;
+  padding: 0 0;
+  margin-left: 5%;
+}
+nav .container-fluid .nav-wrapper {
+  padding: 35px 0;
+}
+nav .container-fluid .nav-wrapper .logo a {
+  display: inline-block;
+}
+nav .container-fluid .nav-wrapper .logo a img {
+  height: 27px;
+}
+@media (max-width: 767px) {
+  nav .container-fluid .nav-wrapper .logo {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+}
+nav .container-fluid .nav-wrapper .menu ul {
+  margin-top: 6px;
+}
+nav .container-fluid .nav-wrapper .menu ul li {
+  float: left;
+}
+nav .container-fluid .nav-wrapper .menu ul li a {
+  color: #fff;
+  margin: 0 5px;
+  border: 2px solid transparent;
+  padding: 10px 17px;
+}
+nav .container-fluid .nav-wrapper .menu ul li a.getstarted {
+  background: #4eb3ea;
+}
+nav .container-fluid .nav-wrapper .menu ul li a.getstarted:hover {
+  border: 2px solid transparent;
+}
+nav .container-fluid .nav-wrapper .menu ul li a:hover {
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  nav .container-fluid .nav-wrapper .menu ul li a {
+    padding: 10px 5px;
+    margin: 0 2px;
+  }
+}
+nav .container-fluid .nav-wrapper .sidebarmenu {
+  padding-top: 6px;
+}
+nav .container-fluid .nav-wrapper .sidebarmenu a {
+  color: #fff;
+}
+nav .container-fluid .nav-wrapper .sidebarmenu a:hover {
+  text-decoration: none;
+}
+@media (max-width: 348px) {
+  nav .container-fluid .nav-wrapper .sidebarmenu {
+    margin-top: -28px;
+    padding-top: 6px;
+  }
+  nav .container-fluid .nav-wrapper .sidebarmenu a {
+    color: #fff;
+  }
+}
+.banner {
+  position: relative;
+}
+.banner .swiper-container {
+  width: 100%;
+  position: relative;
+}
+.banner .swiper-container .swiper-wrapper {
+  width: 100%;
+}
+.banner .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+.banner .swiper-container .swiper-wrapper .swiper-slide a {
+  width: 100%;
+}
+.banner .swiper-container .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+}
+.banner .swiper-container .swiper-pagination {
+  width: 54px;
+  bottom: 5%;
+  left: initial;
+  right: 7%;
+}
+.banner .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+  opacity: initial;
+}
+.banner .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #007aff;
+  opacity: 1;
+}
+.banner .info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 10;
+  width: 80%;
+  margin-left: 10%;
+}
+.banner .info .title {
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.banner .info form input {
+  padding: 15px 10px;
+  font-size: 16px;
+}
+.banner .info form input.text {
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  float: left;
+}
+.banner .info form input.button {
+  background-color: #4eb3ea;
+  color: #fff;
+  float: left;
+}
+.banner .info form input.video {
+  padding: 12px 10px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15PX;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner .title {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+}

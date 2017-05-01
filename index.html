@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--指明ie浏览器按照当前最新的渲染引擎来渲染-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>Create a Website</title>
+    <!--网站图标-->
+    <link rel="icon" href="icon.ico"/>
+    <!--引入bootstrap核心库-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <!--兼容H5标签和媒体查询-->
+    <!--[if lt IE 9]>
+    <script src='lib/html5shiv/html5shiv.min.js'></script>
+    <script src='lib/respond/respond.min.js'></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="lib/swiper/swiper-3.4.2.min.css"/>
+    <!--less文件-->
+    <link rel="stylesheet" href="less/main.css"/>
+</head>
+<body>
+<!--导航部分-->
+<nav>
+    <div class="container-fluid">
+        <div class="nav-wrapper">
+            <div class="logo pull-left">
+                <a href="#"><img src="images/simvoly-logo-wh.png" alt=""/></a>
+            </div>
+            <div class="menu pull-right hidden-xs">
+                <ul class="clearfix">
+                    <li><a href="#">THEMES</a></li>
+                    <li><a href="#">ONLINE STORE</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a class="getstarted" href="#">GET STARTED</a></li>
+                </ul>
+            </div>
+            <div class="sidebarmenu pull-right hidden-sm hidden-md hidden-lg"><a href="#" class="iconfont">&#xe699;</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--banner部分-->
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="images/hero-1st@2x.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/hero-2nd@2x.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/hero-3rd@2x.jpg" alt=""/></a></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="info">
+        <div class="title hidden-xs">Create Beautiful Website</div>
+        <form action="#">
+            <input type="text" placeholder="YOUR EMAIL OR CELL NUMBER" class="text hidden-xs"/>
+            <input type="button" value="GET STARTED" class="button hidden-xs"/>
+            <input type="button" value="The video" class="video"/>
+        </form>
+    </div>
+</div>
+<!--info部分-->
+<div class="sim-info">
+    <div class="info-1p">
+        <div class="container">
+            <h3 class="info-title">为你提供了协作的一切</h3>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="features-icon"></div>
+                <h4>基于项目</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="features-icon"></div>
+                <h4>任务管理</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="features-icon"></div>
+                <h4>分享讨论</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="features-icon"></div>
+                <h4>文件共享</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="features-icon"></div>
+                <h4>日程安排</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="features-icon"></div>
+                <h4>账目记录</h4></div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="features-icon"></div>
+                <h4>每日动态</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="features-icon"></div>
+                <h4>标签</h4>
+            </div>
+            <button class="funIntro">查看详细的功能介绍</button>
+        </div>
+    </div>
+    <div class="info-2p">
+        <div class="container">
+            <h3>随时随地<br/>找到你享受的工作状态</h3>
+            <img src="images/apps-lg-zh@2x.png" alt="" class="hidden-xs"/>
+            <img src="images/xs-apps.png" alt="" class="hidden-sm hidden-md hidden-lg"/>
+        </div>
+    </div>
+    <div class="info-3p">
+        <div class="container">
+            <h3>已经被应用于超过十个行业的逾一百万项目中</h3>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <a href="#">
+                    <div class="caseCon">
+                        <h4>轻松用于敏捷开发</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <a href="#">
+                    <div class="caseCon">
+                        <h4>广告</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <a href="#">
+                    <div class="caseCon">
+                        <h4>精细制造</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <a href="#">
+                    <div class="caseCon">
+                         <h4>学生组织</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <a href="#">
+                    <div class="caseCon">
+                        <h4>教育机构</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <a href="#">
+                    <div class="caseCon">
+                        <h4>行政</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <a href="#">
+                    <div class="caseCon">
+                        <h4>设计</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <a href="#">
+                    <div class="caseCon caseConLast">
+                        <h4>10+</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="info-4p">
+        <div class="container">
+            <video src="images/indexbg.mp4"
+                   poster="https://dn-st.teambition.net/site/v2.2.3/images/index/video-banner-poster.png" autoplay="true" loop="true" preload="auto">
+            </video>
+        </div>
+    </div>
+</div>
+<!--footer部分-->
+<div class="footer">
+    <div class="container">
+        <div class="col-md-3 hidden-xs hidden-sm"><img src="images/logo-w.png" height="30" alt=""/></div>
+        <div class="col-md-3 col-xs-6">
+            <dl>
+                <dt>BUILDER</dt>
+                <dd><a href="../index/index.html">Home</a></dd>
+                <dd><a href="../themesPage/themes.html">Themes</a></dd>
+                <dd><a href="../Online%20Store/Oline-index.html">Online Store</a></dd>
+                <dd><a href="../FEATURES/features.html">Features</a></dd>
+                <dd><a href="../pricing/PEICING.html">Pricing</a></dd>
+                <dd><a href="#">Hire a Designer</a></dd>
+                <dd><a href="#">Restaurant Templates</a></dd>
+            </dl>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <dl>
+                <dt>COMPANY</dt>
+                <dd><a href="../contactus/contactus.html">Contact Us</a></dd>
+                <dd><a href="#">Press</a></dd>
+                <dd><a href="#">About Us</a></dd>
+                <dd><a href="#">Privacy Policy</a></dd>
+                <dd><a href="#">Terms and Conditions</a></dd>
+            </dl>
+        </div>
+        <div class="col-md-3 hidden-xs hidden-sm">
+            <dl>
+                <dt>OTHER</dt>
+                <dd><a href="#">Blog</a></dd>
+                <dd><a href="#">Login</a></dd>
+                <dd><a href="../getstarted/getstarted.html">Get Started</a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © 2013-2017 Simvoly沪ICP备XXXXX号-2
+    </div>
+</div>
+<!--js文件-->
+<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/bootstrap/js/bootstrap.min.js'></script>
+<script src='lib/swiper/swiper-3.4.2.min.js'></script>
+<script src='lib/less/less.min.js'></script>
+<script src='js/index.js'></script>
+</body>
+</html>
