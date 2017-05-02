@@ -9,7 +9,7 @@
     <!--网站图标-->
     <link rel="icon" href="icon.ico"/>
     <!--引入bootstrap核心库-->
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
     <!--兼容H5标签和媒体查询-->
     <!--[if lt IE 9]>
     <script src='lib/html5shiv/html5shiv.min.js'></script>
@@ -22,24 +22,26 @@
 </head>
 <body>
 <!--导航部分-->
-<nav>
-    <div class="container-fluid">
-        <div class="nav-wrapper">
-            <div class="logo pull-left">
-                <a href="#"><img src="images/simvoly-logo-wh.png" alt=""/></a>
-            </div>
-            <div class="menu pull-right hidden-xs">
-                <ul class="clearfix">
-                    <li><a href="#">THEMES</a></li>
-                    <li><a href="#">ONLINE STORE</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a class="getstarted" href="#">GET STARTED</a></li>
-                </ul>
-            </div>
-            <div class="sidebarmenu pull-right hidden-sm hidden-md hidden-lg"><a href="#" class="iconfont">&#xe699;</a>
-            </div>
+<nav class="navbar navbar-default navbar-fixed-top" id="header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"><img src="images/logo.png" alt=""/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" id="headertitle">
+                <li><a href="#">THEMES</a></li>
+                <li><a href="#">ONLINE STORE</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a class="getstarted" href="#">GET STARTED</a></li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -47,15 +49,15 @@
 <div class="banner">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#"><img src="images/hero-1st@2x.jpg" alt=""/></a></div>
-            <div class="swiper-slide"><a href="#"><img src="images/hero-2nd@2x.jpg" alt=""/></a></div>
-            <div class="swiper-slide"><a href="#"><img src="images/hero-3rd@2x.jpg" alt=""/></a></div>
+            <div class="swiper-slide slide1"><a href="#"></a></div>
+            <div class="swiper-slide slide2"><a href="#"></a></div>
+            <div class="swiper-slide slide3"><a href="#"></a></div>
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
     </div>
     <div class="info">
-        <div class="title hidden-xs">Create Beautiful Website</div>
+        <div class="title">Create Beautiful Website</div>
         <form action="#">
             <input type="text" placeholder="YOUR EMAIL OR CELL NUMBER" class="text hidden-xs"/>
             <input type="button" value="GET STARTED" class="button hidden-xs"/>
@@ -173,7 +175,7 @@
     <div class="info-4p">
         <div class="container">
             <video src="images/indexbg.mp4"
-                   poster="https://dn-st.teambition.net/site/v2.2.3/images/index/video-banner-poster.png" autoplay="true" loop="true" preload="auto">
+                   poster="https://dn-st.teambition.net/site/v2.2.3/images/index/video-banner-poster.png" controls='controls' loop="true" preload="auto">
             </video>
         </div>
     </div>
@@ -214,11 +216,12 @@
         </div>
     </div>
     <div class="copyright">
-        Copyright © 2013-2017 Simvoly沪ICP备XXXXX号-2
+        <p class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right">Copyright © 2013-2017</p>
+        <p class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left">Simvoly沪ICP备XXXXX号-2</p>
     </div>
 </div>
 <!--js文件-->
-<script src='lib/jquery/jquery.min.js'></script>
+<script src='lib/jquery/jquery.js'></script>
 <script src='lib/bootstrap/js/bootstrap.min.js'></script>
 <script src='lib/swiper/swiper-3.4.2.min.js'></script>
 <script src='lib/less/less.min.js'></script>

@@ -18,24 +18,31 @@ window.onload = function () {
         autoplayDisableOnInteraction: false
     });
 
-    //info1p
-    //²Ù×÷¾«ÁéÍ¼µÄ±³¾°Î»ÖÃ
+    $(function () {
 
-    var $feaIcon = $('.features-icon');
-    $.each($feaIcon, function (i, item) {
-        var $item = $(item);
-        $item.css({
-            'background-position': '' + (-i * 44) + 'px 0'
+
+
+        //info1p
+        //²Ù×÷¾«ÁéÍ¼µÄ±³¾°Î»ÖÃ
+
+        var $feaIcon = $('.features-icon');
+        $.each($feaIcon, function (i, item) {
+            var $item = $(item);
+            $item.css({
+                'background-position': '' + (-i * 44) + 'px 0'
+            })
+
         })
 
-    })
+        //²Ù×÷case±³¾°Í¼
+        var $infocaseImg = $('.info-3p>.container>div>a');
+        $.each($infocaseImg, function (i, item) {
+            var $item = $(item);
+            $item.css({
+                'background-image': 'url(images/case' + (i + 1) + (i == 6 ? '.jpg' : '.png)')
+            })
+        })
 
-    //²Ù×÷case±³¾°Í¼
-    var $infocaseImg = $('.info-3p>.container>div>a');
-    $.each($infocaseImg,function (i,item) {
-        var $item = $(item);
-       $item.css({
-            'background-image': 'url(images/case'+(i+1)+(i==6?'.jpg':'.png)')
-       })
+
     })
 }
